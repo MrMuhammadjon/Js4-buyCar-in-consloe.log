@@ -96,11 +96,11 @@ if (UserName === UserName) {
             console.log("!!!   Dasturga Xush kelibsiz  !!!");
             console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
             console.log(`${BrendCars}`);
-            console.log("Qaysi mashinani xarid qilmoqchi bo'lsing raqam orqali beldilang");
+            console.log("Qaysi mashinani xarid qilmoqchi bo'lsangiz raqam orqali beldilang");
 
-            let getCar = prompt("tanlagan mashina raqamini yozing!!")
+            let idCar = prompt("tanlagan mashina raqamini yozing!!")
 
-            switch (getCar) {
+            switch (idCar) {
                 case '1':
                     console.log(`ajoyib siz tanlagan mashina: ${A}`);
                     let ansverYesNo = prompt(`siz ushbu mashinani olmoqchimi siz ${A} ( yes / no ) yozing`);
