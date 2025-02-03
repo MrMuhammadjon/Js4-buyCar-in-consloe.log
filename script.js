@@ -56,25 +56,24 @@
 
 
 
-
-
-
-
-
-
-
-
 let minAge = '18'
 let BrendCars = ['1.Audi: 55.000$', ' 2.MERS: 60.000$', ' 3.BUGATTI: 45.000$', ' 4.PORCE: 20.000$', ' 5.Jeaur: 30.000$', ' 6.LOMBARGIHNI: 31.000$', ' 7.GENTRA: 15.000$']
 let minBalans = '15000'
 
 let A = 'Audi 55.000$';
+let audiPrice = '55000'
 let M = 'MERS 60.000$';
+let mersPrice = '60000'
 let B = 'BUGATTI 45.000$';
+let bugattiPraic = '45000'
 let P = 'PORCE 20.000$';
-let J = 'Jeaur 30.000$';
+let porcePrice = '20000'
+let J = 'Jetaur 30.000$';
+let jetaurPrice = '30000'
 let L = 'LOMBARGIHNI 31.000$';
+let lombargihniPrice = '31000'
 let G = 'GENTRA 15.000$';
+let gentraPrice = '15000'
 
 let yes = 'yes'
 let no = 'no'
@@ -94,42 +93,166 @@ if (UserName === UserName) {
         if (minBalans <= promptBalans) {
             console.log(`Balanse:${promptBalans}$`);
 
-            console.log("!!!   Dasturga Xush kelibsiz !!!");
+            console.log("!!!   Dasturga Xush kelibsiz  !!!");
             console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
             console.log(`${BrendCars}`);
             console.log("Qaysi mashinani xarid qilmoqchi bo'lsing raqam orqali beldilang");
 
-            let getCar = prompt("tanlagan raqamini yozing yozing")
+            let getCar = prompt("tanlagan mashina raqamini yozing!!")
 
             switch (getCar) {
                 case '1':
                     console.log(`ajoyib siz tanlagan mashina: ${A}`);
-                    let ansverYesNo = prompt("siz ushbu mashinani olmoqchimi siz ( yes / no ) yuzing");
+                    let ansverYesNo = prompt(`siz ushbu mashinani olmoqchimi siz ${A} ( yes / no ) yozing`);
                     if (ansverYesNo === yes) {
+                        let Igetcar = promptBalans - audiPrice
+                        if (Igetcar >= 0) {
+                            console.log(`siz ${A} mashinasi egasizga aylandingiz tabriklaymiz`);
+                            console.log(`sizning qolgan balansingiz: ${Igetcar}$`);
+                            console.log("xaridingiz uchun rahmat");
 
-                        if (ansverYesNo === no) {
-                            
                         } else {
-                            
+                            console.log("mijoz mashinani sotib olish uchun mabilag'ingiz yetarli emas");
+
                         }
-                    }else{}
+                    } else if (ansverYesNo === no) {
+                        console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
+                        console.log(`${BrendCars}`);
+                    } else {
+                        console.log("to'g'ri javob bermadingiz");
+
+                    }
+
                     break;
                 case '2':
                     console.log(`ajoyib siz tanlagan mashina: ${M}`);
+                    let ansverYesNo2 = prompt(`siz ushbu mashinani olmoqchimi siz ${M} ( yes / no ) yozing`);
+                    if (ansverYesNo2 === yes) {
+                        let Igetcar = promptBalans - mersPrice
+                        if (Igetcar >= 0) {
+                            console.log(`siz ${M} mashinasi egasizga aylandingiz tabriklaymiz`);
+                            console.log(`sizning qolgan balansingiz: ${Igetcar}$`);
+                            console.log("xaridingiz uchun rahmat");
+
+                        } else {
+                            console.log("mijoz mashinani sotib olish uchun mabilag'ingiz yetarli emas");
+
+                        }
+                    } else if (ansverYesNo === no) {
+                        console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
+                        console.log(`${BrendCars}`);
+                    } else {
+                        console.log("to'g'ri javob bermadingiz");
+
+                    }
                     break;
                 case '3':
                     console.log(`ajoyib siz tanlagan mashina: ${B}`);
+                    let ansverYesNo3 = prompt(`siz ushbu mashinani olmoqchimi siz ${B} ( yes / no ) yozing`);
+                    if (ansverYesNo3 === yes) {
+                        let Igetcar = promptBalans - bugattiPraic
+                        if (Igetcar >= 0) {
+                            console.log(`siz ${B} mashinasi egasizga aylandingiz tabriklaymiz`);
+                            console.log(`sizning qolgan balansingiz: ${Igetcar}$`);
+                            console.log("xaridingiz uchun rahmat");
+
+                        } else {
+                            console.log("mijoz mashinani sotib olish uchun mabilag'ingiz yetarli emas");
+
+                        }
+                    } else if (ansverYesNo === no) {
+                        console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
+                        console.log(`${BrendCars}`);
+                    } else {
+                        console.log("to'g'ri javob bermadingiz");
+
+                    }
                     break;
                 case '4':
                     console.log(`ajoyib siz tanlagan mashina: ${P}`);
+                    let ansverYesNo4 = prompt(`siz ushbu mashinani olmoqchimi siz ${P} ( yes / no ) yozing`);
+                    if (ansverYesNo4 === yes) {
+                        let Igetcar = promptBalans - porcePrice
+                        if (Igetcar >= 0) {
+                            console.log(`siz ${P} mashinasi egasizga aylandingiz tabriklaymiz`);
+                            console.log(`sizning qolgan balansingiz: ${Igetcar}$`);
+                            console.log("xaridingiz uchun rahmat");
+
+                        } else {
+                            console.log("mijoz mashinani sotib olish uchun mabilag'ingiz yetarli emas");
+
+                        }
+                    } else if (ansverYesNo === no) {
+                        console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
+                        console.log(`${BrendCars}`);
+                    } else {
+                        console.log("to'g'ri javob bermadingiz");
+
+                    }
                     break;
                 case '5':
                     console.log(`ajoyib siz tanlagan mashina: ${J}`);
+                    let ansverYesNo5 = prompt(`siz ushbu mashinani olmoqchimi siz ${J} ( yes / no ) yozing`);
+                    if (ansverYesNo5 === yes) {
+                        let Igetcar = promptBalans - jetaurPrice
+                        if (Igetcar >= 0) {
+                            console.log(`siz ${J} mashinasi egasizga aylandingiz tabriklaymiz`);
+                            console.log(`sizning qolgan balansingiz: ${Igetcar}$`);
+                            console.log("xaridingiz uchun rahmat");
+
+                        } else {
+                            console.log("mijoz mashinani sotib olish uchun mabilag'ingiz yetarli emas");
+
+                        }
+                    } else if (ansverYesNo === no) {
+                        console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
+                        console.log(`${BrendCars}`);
+                    } else {
+                        console.log("to'g'ri javob bermadingiz");
+                    }
                 case '6':
                     console.log(`ajoyib siz tanlagan mashina: ${L}`);
+                    let ansverYesNo6 = prompt(`siz ushbu mashinani olmoqchimi siz ${L} ( yes / no ) yozing`);
+                    if (ansverYesNo6 === yes) {
+                        let Igetcar = promptBalans - lombargihniPrice
+                        if (Igetcar >= 0) {
+                            console.log(`siz ${L} mashinasi egasizga aylandingiz tabriklaymiz`);
+                            console.log(`sizning qolgan balansingiz: ${Igetcar}$`);
+                            console.log("xaridingiz uchun rahmat");
+                            
+                        }else{
+                            console.log("mijoz mashinani sotib olish uchun mabilag'ingiz yetarli emas");
+                            
+                        }
+                    } else if (ansverYesNo === no) {
+                        console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
+                        console.log(`${BrendCars}`);
+                    } else {
+                        console.log("to'g'ri javob bermadingiz");
+                        
+                    }
                     break;
                 case '7':
                     console.log(`ajoyib siz tanlagan mashina: ${G}`);
+                    let ansverYesNo7 = prompt(`siz ushbu mashinani olmoqchimi siz ${G} ( yes / no ) yozing`);
+                    if (ansverYesNo7 === yes) {
+                        let Igetcar = promptBalans - gentraPrice
+                        if (Igetcar >= 0) {
+                            console.log(`siz ${G} mashinasi egasizga aylandingiz tabriklaymiz`);
+                            console.log(`sizning qolgan balansingiz: ${Igetcar}$`);
+                            console.log("xaridingiz uchun rahmat");
+                            
+                        }else{
+                            console.log("mijoz mashinani sotib olish uchun mabilag'ingiz yetarli emas");
+                            
+                        }
+                    } else if (ansverYesNo === no) {
+                        console.log("Bizning avto salonimzdan siga yoqqan mashinnagizni xarid qilishingiz mumkin!");
+                        console.log(`${BrendCars}`);
+                    } else {
+                        console.log("to'g'ri javob bermadingiz");
+                        
+                    }
                     break
 
                 default:
