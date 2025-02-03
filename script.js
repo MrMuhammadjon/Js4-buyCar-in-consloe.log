@@ -278,6 +278,10 @@ if (UserName === UserName) {
 }
 
 
+console.log("Hayotda ham SHunaqa mashinani tez olsamda 😂😂😂");
+
+
+
 
 
 
